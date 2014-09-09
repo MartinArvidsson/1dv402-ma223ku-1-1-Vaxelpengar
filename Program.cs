@@ -32,11 +32,10 @@ namespace Växelpengar_labration_Martin_Arvidsson_UD14
             Console.WriteLine("KVITTO");
             Console.WriteLine("---------------------------------------");
 
-            //  Öresavrundning, Finalprice är lika med Totalsum avrundat, Totalsum är vad sakerna kostar. Rounding off är priset efter avrundingen Rounding off blir Kostnaden av sakerna - pengarna 
-            // som man fick av kunden.
+            //  Öresavrundning sker här, Dock så avrundar en inte bara decimalerna utan allt innan också. ska åtgärdas
 
             FinalPrice = (uint)Math.Round(TotalSum);
-            RoundingOff = TotalSum - MoneyFromCustomer;
+            RoundingOff = FinalPrice - MoneyFromCustomer;
 
             //Presenterar resultatet.
             Console.WriteLine("Totalt");
