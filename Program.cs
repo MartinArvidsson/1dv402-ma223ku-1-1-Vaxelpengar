@@ -25,7 +25,7 @@ namespace Växelpengar_labration_Martin_Arvidsson_UD14
             //Presenterar Grafiskt
 
             Console.WriteLine("KVITTO");
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("---------------------------------------");
 
             // Beräknar pengarna kunden gav dig - vad det kostar
             FinalPrice = MoneyFromCustomer - TotalSum;
