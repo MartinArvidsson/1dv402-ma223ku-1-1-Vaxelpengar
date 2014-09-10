@@ -32,7 +32,7 @@ namespace Växelpengar_labration_Martin_Arvidsson_UD14
             Console.WriteLine("KVITTO");
             Console.WriteLine("---------------------------------------");
 
-            //  Öresavrundning sker här, Dock så avrundar en inte bara decimalerna utan allt innan också. ska åtgärdas
+            //  Öresavrundning sker här, Dock så avrundar en inte bara decimalerna utan hela talet i dagsläget. ska åtgärdas.
 
             FinalPrice = (uint)Math.Round(TotalSum);
             RoundingOff = FinalPrice - MoneyFromCustomer;

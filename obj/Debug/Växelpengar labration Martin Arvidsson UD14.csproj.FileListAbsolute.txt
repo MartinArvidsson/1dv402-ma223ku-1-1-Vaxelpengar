@@ -10,3 +10,6 @@ D:\Program files\Visual Studio\Filer\Växelpengar Labb Martin A\obj\Debug\Växel
 D:\Program files\Visual Studio\Filer\Växelpengar Labb Martin A\bin\Debug\Växelpengar labration Martin Arvidsson UD14.exe
 D:\Program files\Visual Studio\Filer\Växelpengar Labb Martin A\bin\Debug\Växelpengar labration Martin Arvidsson UD14.pdb
 D:\Program files\Visual Studio\Filer\Växelpengar Labb Martin A\obj\Debug\Växelpengar labration Martin Arvidsson UD14.csprojResolveAssemblyReference.cache
+F:\Filer\Växelpengar Labb Martin A\bin\Debug\Växelpengar labration Martin Arvidsson UD14.exe.config
+F:\Filer\Växelpengar Labb Martin A\obj\Debug\Växelpengar labration Martin Arvidsson UD14.exe
+F:\Filer\Växelpengar Labb Martin A\obj\Debug\Växelpengar labration Martin Arvidsson UD14.pdb
