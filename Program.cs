@@ -11,10 +11,12 @@ namespace Växelpengar_labration_Martin_Arvidsson_UD14
         static void Main(string[] args)
         {
             // Anger Variabler 
-            double TotalSum;
-            int MoneyFromCustomer;
-            uint FinalPrice;
-            double RoundingOff;
+            double  TotalSum;
+            int     MoneyFromCustomer;
+            double  RoundingOff;
+            int     TotalAfterRounding;
+            int     WhatToPay;
+
             
 
             //Frågar om hur mkt kunden ska betala, gör också om strängen till ett nummer som programmet kan jobba med
@@ -34,15 +36,17 @@ namespace Växelpengar_labration_Martin_Arvidsson_UD14
 
             //  Öresavrundning sker här, Dock så avrundar en inte bara decimalerna utan hela talet i dagsläget. ska åtgärdas.
 
-            FinalPrice = (uint)Math.Round(TotalSum);
-            RoundingOff = FinalPrice - MoneyFromCustomer;
+            TotalAfterRounding = (int)Math.Round(TotalSum);
+            RoundingOff = TotalAfterRounding - TotalSum;
+
+            WhatToPay = MoneyFromCustomer - TotalAfterRounding;
 
             //Presenterar resultatet.
-            Console.WriteLine("Totalt");
-            Console.WriteLine("Öresavrundning: {0} ", RoundingOff); // {0:f2} innebär att öresavrundningen skrivs med 2 decimaler.
-            Console.WriteLine("Att Betala");
-            Console.WriteLine("Kontant");
-            Console.WriteLine("Totalt");
+            Console.WriteLine("Totalt: {0:c} ", TotalSum);
+            Console.WriteLine("Öresavrundning: {0:c} ", RoundingOff ); // {0:f2} innebär att öresavrundningen skrivs med 2 decimaler.
+            Console.WriteLine("Att Betala: {0:c:} ", TotalAfterRounding);
+            Console.WriteLine("Kontant : {0:c:} ", MoneyFromCustomer);
+            Console.WriteLine("Totalt: {0:c} ", WhatToPay);
             Console.WriteLine("---------------------------------------");
 
         }
